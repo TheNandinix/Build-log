@@ -1,0 +1,57 @@
+print (True,False)
+print(type(True))
+my_str="Nandini04"
+print(my_str.isalnum())
+print(my_str.isalpha())
+print(my_str.isdigit())
+print(my_str.islower())
+print(my_str.isupper())
+print(my_str.istitle())
+print(my_str.isspace())
+print(my_str.endswith('0'))                #Case sensitive
+print(my_str.startswith('N'))             #Case sensitive
+
+print(True and True)                      #OPERATORS
+print(True and False)
+print(True or True)
+print(True or False)
+
+str_exp="Hello World"
+print(my_str.isalpha() or str_exp.isnumeric())
+
+print(type([]))                            #LISTS
+lst_exp=[]
+print(lst_exp)
+print(type(lst_exp))
+lst=list()
+print(lst)
+lst=['Mathematics', 'Chemistry', 100, 200, 30, 40, 500]
+print(type(lst))
+
+lst.append('Physics')
+print(lst)
+print(len(lst))
+print(lst[3])
+print(lst[1:6])
+lst.append(["Biology", "CS"])              #NESTED LIST
+print(lst)
+
+lst=[1,2,3,4,5,6]
+lst.extend([7,8])
+print(lst)
+print(sum(lst))
+print(lst.pop())
+print(lst.count(5))
+lst.index(4,0,4)
+print(lst)
+print(lst*3)
+
+
+
+
+
+
+
+
+
+
