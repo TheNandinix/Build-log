@@ -1,0 +1,46 @@
+set_var= set()
+print(set_var)
+print(type(set_var))
+
+set_var= {1,2,3,4,3}                #has no duplicate elements
+print(set_var)                            #SETS
+set_var.add("IronMan")              #No indexing in sets 
+print(set_var)
+
+set1={"Ironman", "spiderman", "hulk", "thor"}
+set2={"Ironman", "hulk", "thor"}
+set1.difference(set2)
+print(set1.difference(set2))
+set1.difference_update(set2)              #KEEP IN MIND THAT SUBTRACT BIG FROM SMALL
+print(set1)
+
+set2.intersection(set1)
+print(set2.intersection(set1))          #IF YOU ARE SUBTRACTING SMALL FROM BIG IT WILL GIVE AN EMPTY SET
+set2.intersection_update(set1)
+print(set2)
+
+my_dict={"car1":"Audi", "car2":"Mercedes"}
+print(my_dict)
+print(my_dict["car1"])
+for x in my_dict:
+    print(x)
+for x in my_dict.values():   
+    print(x)
+for x in my_dict.items():
+    print(x)
+my_dict['car4']="Lyken"                    #OVERWRITING HAPPENS IN DICTS
+print(my_dict)
+
+car1_model={'Mercedes':1960}
+car2_model={'Audi':1970}
+car3_model={'Lyken':1980}
+car_type={"car1":car1_model, "car2":car2_model, "car3":car3_model}
+print(car_type)           #NESTED DICTIONARY
+
+my_tuple= tuple()
+my_tuple=("Ansh", "Siren", "Sassy")
+print(my_tuple)
+print(my_tuple[0])
+print(my_tuple.count("Ansh"))
+print(my_tuple.index("Sassy"))
+
